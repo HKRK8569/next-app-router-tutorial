@@ -37,3 +37,28 @@ import Image from 'next/image';
     alt="Screenshots of the dashboard project showing desktop version"
     />
 ```
+
+## routing
+
+app ディレクトリに任意の名前のディレクトリを作成してその中に page.tsx を作成すると自動的にルーティングされる
+
+- TOP
+  - /
+- dashboard
+  - /dashboard
+- customers
+  - /dashboard/customers
+
+```
+- app
+   - page.tsx
+   - dashboard
+      - page.tsx
+      - customers
+         - page.tsx
+
+```
+
+## layout
+
+layout.tsx を配置している配下の page.tsx の共通部分を記述できる
