@@ -62,3 +62,24 @@ app ディレクトリに任意の名前のディレクトリを作成してそ�
 ## layout
 
 layout.tsx を配置している配下の page.tsx の共通部分を記述できる
+
+## Link
+
+[next/link](https://nextjs-ja-translation-docs.vercel.app/docs/api-reference/next/link)を利用する
+
+Link コンポーネントが表示されると nextjs はルートのコードをプリフェッチする
+
+```
+import Link from 'next/link';
+
+ <Link
+    href="/"
+  >Top</Link>
+```
+
+## usePathname
+
+path を取得する関数
+使用する場合は use client を記述する必要あり
+
+https://nextjs.org/docs/app/api-reference/functions/use-pathname
