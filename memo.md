@@ -97,3 +97,23 @@ path を取得する関数
 使用する場合は use client を記述する必要あり
 
 https://nextjs.org/docs/app/api-reference/functions/use-pathname
+
+## PPR
+
+ページを静的なレンダリングをしつつ、必要な部分だけ動的なレンダリングを使うことができる
+
+```
+export const experimental_ppr = true;
+```
+
+next.config
+
+```
+const nextConfig = {
+  experimental: {
+    ppr: 'incremental',
+  },
+};
+
+export default nextConfig;
+```
