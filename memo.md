@@ -102,6 +102,8 @@ https://nextjs.org/docs/app/api-reference/functions/use-pathname
 
 ページを静的なレンダリングをしつつ、必要な部分だけ動的なレンダリングを使うことができる
 
+'pnpm install next@canary'をしないと react19 だと問題が発生する？する？
+
 ```
 export const experimental_ppr = true;
 ```
