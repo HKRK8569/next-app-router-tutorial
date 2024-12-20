@@ -119,3 +119,37 @@ const nextConfig = {
 
 export default nextConfig;
 ```
+
+## useRouter
+
+### replace
+
+path を設定することができる
+
+```
+replace(`${pathname}?${params.toString()}`);
+```
+
+## searchParams
+
+### useSearchParams
+
+use client が必要
+searchParams を取得する
+
+```
+const searchParams = useSearchParams();
+```
+
+### serverComponent
+
+serverComponent の場合は下記のように取得する
+
+```
+export default async function Page(props: {
+  searchParams?: Promise<{
+    query?: string;
+    page?: string;
+  }>;
+})
+```
