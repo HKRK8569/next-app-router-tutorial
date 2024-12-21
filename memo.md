@@ -153,3 +153,16 @@ export default async function Page(props: {
   }>;
 })
 ```
+
+## cache
+
+### revalidatePath
+
+対象のパスのが再検証されてサーバーから最新のデータなどを取得する
+データを登録・更新した際などに使う
+
+```
+import { revalidatePath } from 'next/cache';
+
+revalidatePath('/dashboard/invoices');
+```
