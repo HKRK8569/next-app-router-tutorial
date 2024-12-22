@@ -166,3 +166,19 @@ import { revalidatePath } from 'next/cache';
 
 revalidatePath('/dashboard/invoices');
 ```
+
+## error
+
+### error.tsx
+
+配下のページでエラーが起きた際に error.tsx が表示される
+
+### not-found.tsx
+
+配下のページが存在しない場合や下記コードを実行などした際に表示される
+
+```
+import { notFound } from "next/navigation";
+
+nouFound()
+```
